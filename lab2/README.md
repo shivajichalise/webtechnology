@@ -113,7 +113,8 @@ The HTML `<form>` element is used to create an HTML form for user input.
 
 Some of the form elements are:
 
-### The <input> element
+### The `<input>` element
+
 The HTML `<input>` element is the most used form element. 
 An `<input>` element can be displayed in many ways, depending on the type attribute.
 eg:
@@ -124,7 +125,92 @@ eg:
 + type="checkbox"
 + type="submit"
 
-### The <label> element
+### The `<label>` element
+
 The `<label>` element defines a label for several form elements. 
 It's useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
 It also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the `<label>` element, it toggles the radio button/checkbox.
+
+### The `<select>` element
+
+The `<select>` element defines a drop-down list.
+The `<option>` elements defines an option that can be selected. By default, the first item in the drop-down list is selected.
+To define a pre-selected option, add the selected attribute to the option. eg `<option value="" selected></option>`
+
+### The `<textarea>` element
+
+The `<textarea>` element defines a multi-line input field.
+
+### The `<button>` element
+
+The `<button>` element defines a clickable button.
+
+> following is one simple example of html form
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#form-table{
+        	border-collapse: collapse;
+            box-shadow: 5px 10px #888888;
+            font-family: courier;
+            background: #20B2AA;
+        }
+        
+        #form-table td{
+        	padding: 10px;
+        }
+	</style>
+</head>
+<body>
+<form>
+	<table border="1px" id="form-table">
+    	<tr>
+        	<td>Name:</td>
+            <td><input type="text" name="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+        	<td>Country:</td>
+            <td>
+            	<select name="country" style="width:100%;">
+                	<option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option value="nepal" selected>Nepal</option>
+                    <option>China</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        	<td>Address:</td>
+            <td><input type="text" name="address" placeholder="Address"></td>
+        </tr>
+        <tr>
+        	<td>Contact</td>
+        	<td><input type="number" name="contact" placeholder="Contact"></td>
+        </tr>
+        <tr>
+        	<td colspan="2"><label>Male</label><input type="radio" name="gender"><label>Female</label><input type="radio" name="gender"></td>
+        </tr>
+        <tr>
+        	<td><label>Any Health Problems:</label></td>
+            <td>
+            <input type="checkbox"><label>Heart</label>
+            <input type="checkbox"><label>Kidney</label><br>
+            <input type="checkbox"><label>Liver</label>
+            <input type="checkbox"><label>Brain</label>
+            </td>
+        </tr>
+        <tr>
+        	<td>Submit:</td>
+            <td><button type="button" name="submit" style="width:100%;">Submit</button></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
+
+```
