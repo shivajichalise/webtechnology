@@ -147,67 +147,69 @@ The `<button>` element defines a clickable button.
 
 > following is one simple example of html form
 
+![HtmlForm](https://raw.githubusercontent.com/shivajichalise/webtechnology/main/screenshots/htmlform.png)
+
 ```
 <!DOCTYPE html>
 <html>
 <head>
 	<style>
 		#form-table{
-        	border-collapse: collapse;
-            box-shadow: 5px 10px #888888;
-            font-family: courier;
-            background: #20B2AA;
-        }
-        
-        #form-table td{
-        	padding: 10px;
-        }
+      border-collapse: collapse;
+      box-shadow: 5px 10px #888888;
+      font-family: courier;
+      background: #20B2AA;
+    }
+
+    #form-table td{
+      padding: 10px;
+    }
 	</style>
 </head>
 <body>
 <form>
 	<table border="1px" id="form-table">
     	<tr>
-        	<td>Name:</td>
-            <td><input type="text" name="name" placeholder="Name"></td>
-        </tr>
-        <tr>
-        	<td>Country:</td>
-            <td>
-            	<select name="country" style="width:100%;">
-                	<option>India</option>
-                    <option>USA</option>
-                    <option>UK</option>
-                    <option value="nepal" selected>Nepal</option>
-                    <option>China</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-        	<td>Address:</td>
-            <td><input type="text" name="address" placeholder="Address"></td>
-        </tr>
-        <tr>
-        	<td>Contact</td>
-        	<td><input type="number" name="contact" placeholder="Contact"></td>
-        </tr>
-        <tr>
-        	<td colspan="2"><label>Male</label><input type="radio" name="gender"><label>Female</label><input type="radio" name="gender"></td>
-        </tr>
-        <tr>
-        	<td><label>Any Health Problems:</label></td>
-            <td>
+        <td>Name:</td>
+        <td><input type="text" name="name" placeholder="Name"></td>
+      </tr>
+      <tr>
+       	<td>Country:</td>
+          <td>
+            <select name="country" style="width:100%;">
+                <option>India</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option value="nepal" selected>Nepal</option>
+                  <option>China</option>
+              </select>
+          </td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><input type="text" name="address" placeholder="Address"></td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td><input type="number" name="contact" placeholder="Contact"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label>Male</label><input type="radio" name="gender"><label>Female</label><input type="radio" name="gender"></td>
+      </tr>
+      <tr>
+        <td><label>Any Health Problems:</label></td>
+          <td>
             <input type="checkbox"><label>Heart</label>
             <input type="checkbox"><label>Kidney</label><br>
             <input type="checkbox"><label>Liver</label>
             <input type="checkbox"><label>Brain</label>
-            </td>
-        </tr>
-        <tr>
-        	<td>Submit:</td>
-            <td><button type="button" name="submit" style="width:100%;">Submit</button></td>
-        </tr>
-    </table>
+          </td>
+      </tr>
+      <tr>
+        <td>Submit:</td>
+        <td><button type="button" name="submit" style="width:100%;">Submit</button></td>
+      </tr>
+  </table>
 </form>
 
 </body>
