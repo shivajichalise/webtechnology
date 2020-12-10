@@ -1,0 +1,229 @@
+@font-face { font-family: Colus; src: url('../fonts/Colus-Regular.otf'); }
+@font-face { font-family: Briberra; src: url('../fonts/Briberra.otf'); }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Colus;
+  background-color: #ffffff;
+}
+
+div.header{
+  height: 70%;
+}
+
+div.header img{
+  margin: -97px 0px 0px 100px;
+  height: 100%; 
+}
+
+div.navbar{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 20px; */
+}
+
+ul.navmenu li {
+  float: left;
+}
+
+ul.navmenu li a {
+  text-decoration: none;
+  margin: 50px 50px;
+  color: #000000;
+  /*font-family: 'Castoro', serif;*/ 
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 18px;
+}
+
+ul.navmenu {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+h1.title{
+  font-family: 'Major Mono Display', monospace;  
+  font-size: 280px;
+  letter-spacing: -8px;
+  /* border-left-width: 10px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-right-width: 10px; */
+  background-image: linear-gradient(
+	to bottom,
+  /*
+	#f6e27a 15%,
+	#FCC201 30%,
+  #EEB609 55%, 
+  #DBA514 65%, 
+	#B78628 75%,
+	#f6f2c0 95%,
+  #462523 100%
+  */
+
+  #462523 13%,
+  #b1955d 30%,
+  #f6f2c0 35%,
+  #edd18b 45%, 
+  #bea166 55%,
+  #e7cb86 65%,
+  #f6f2c0 80%,
+  #b48c5b 85%,
+  #462523 100%
+  ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(10px 0.5px 10px #f6f2c0 );
+  /* width: 680px; */
+  /* display: inline-block; */
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+h1.title::first-letter{
+  letter-spacing: -30px;
+}
+
+p.quote{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  }
+
+img#scrolldown{
+  height: 50px;
+  width: 50px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
+.content{
+padding-bottom: 2.5em;
+}
+
+.uppercontent {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  overflow:hidden;
+  height: auto;
+}
+
+div.left-col{
+  width: 33.33%;
+  margin-right: 3px;
+  color: #ffffff;
+  background-color: #171717;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+div.mid-col{
+  width: 33.33%;
+  margin-right: 2px;
+
+}
+
+div.right-col{
+  width: 33.33%;
+  margin-right: 2px;
+}
+
+.left-col p{
+  font-family: 'Texturina', serif;
+  font-size: 27px;
+  padding-left: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  height: calc(100vh);
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+.stickyMid{
+  margin-left: 33.33%;
+}
+
+footer {
+  position: absolute;
+  height: 13em;
+}
+
+.footer-all{
+ 	background-color: #171717;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+  display: flex;
+}
+
+.footer-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%; 
+}
+
+.footer-mid{
+  width: 25%;
+
+}
+
+.footer-midright{
+  width: 25%;
+
+}
+
+.footer-right{
+  width: 25%;
+}
+
+.footer-all p{
+font-family: 'Padauk', sans-serif;
+color:  #f6f2c0; 
+font-size: 20px;
+}
+
+ul.footerinfo{
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+ul.footerinfo li {
+  margin: 0px 0px 3px 0px;
+}
+
+ul.footerinfo li a{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+#copyright{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+#exception{
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.designs img{
+  max-width: 100%;
+  margin-bottom: 2px;
+  display: block; /* remove extra space below image */
+}

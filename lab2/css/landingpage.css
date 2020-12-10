@@ -1,0 +1,87 @@
+   @font-face { font-family: Colus; src: url('../fonts/Colus-Regular.otf'); }
+   body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Colus;
+      color: #777;
+    }
+
+    .bgimg-1{
+      display: flex;
+      position: relative;
+      opacity: 0.65;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: 100%;
+      background-image: url("../images/paubhaWall.jpg");
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      color: #000;
+      right: 1044.28px;
+      top: 250px;
+      left: 90px;
+    }
+
+    .title span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 30px;
+      letter-spacing: 15px;
+    }
+
+div.navbar{
+  position: absolute;
+    top: 0px;
+    right: 0px;}
+
+ul.navmenu li {
+  float: left;
+}
+
+ul.navmenu li a {
+  text-decoration: none;
+  margin: 50px 20px 0px 0px;
+  color: #fff;
+  /*font-family: 'Castoro', serif;*/ 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+   border-radius: 25px;
+  padding: 18px;
+
+}
+
+a#facebook{
+  background-color: #3b5998;
+}
+
+a#instagram{
+  background-color: #f56040;
+}
+
+ul.navmenu {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 30px;
+}
+
+p#services{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  margin-right: -22px;
+}
+
+div.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}

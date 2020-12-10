@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>TODO</title>
+</head>
+
+<body>
+  <label>Tasks</label> <input type="text" id="work" />
+  <ul id="lists">
+
+  </ul>
+  <script>
+    var tasks = [];
+    document.getElementById("work").addEventListener("keyup", (event) => {
+      if (event.keyCode == 13) {
+        var todoEl = document.getElementById("work");
+        var item = todoEl.value;
+        var list = {
+          name: item,
+          isCompleted: false
+        };
+        tasks.push(list);
+        console.log(tasks);
+        todoEl.value = "";
+        renderHTML();
+      }
+    });
+
+    function renderHTML() {
+      document.getElementById("lists").innerHTML = "";
+      tasks.forEach(el => {
+        console.log(el);
+        var checked = "";
+        if (el.isCompleted) {
+          checked = "checked";
+        }
+        document.getElementById("lists").innerHTML += `<li> <input type="checkbox" ${checked}/> ${el.name} </li>`;
+      })
+    }
+  </script>
+</body>
+
+</html>
