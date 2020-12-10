@@ -219,6 +219,6 @@ The `<button>` element defines a clickable button.
 ### Landing Page
 
 > Below shows the screenshot of simple landing page 
-  >> Find live on [yakeenkapali.com.np/landingpage.html]
+  >> Find live [here] (yakeenkapali.com.np/landingpage.html)
 
 ![Landing Page](https://raw.githubusercontent.com/shivajichalise/webtechnology/main/screenshots/landingpage_paubha.png)
