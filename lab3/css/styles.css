@@ -1,0 +1,148 @@
+body{
+  background-color: #f6f6f6;
+}
+
+.container{
+  display: flex;
+  min-height: 100%;
+}
+
+div.left-col{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-height: 39em;
+  max-height: 39em;
+  }
+
+div.left-col > * {
+  margin: 0% 0% 0% 8%;
+}
+
+h2#title{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 5em;
+  text-shadow: 1px 1px 3px #171717;
+}
+
+div.right-col{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ffffff; */
+   width: 55%;
+}
+
+div.clocks{
+  display: flex;
+  flex-direction: row;
+  height: 55%;
+}
+
+div.digital{
+  display: flex;
+  width: 60%;
+  max-height: 16em;
+  min-height: 16em;
+   justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+div.digitalclock{
+  width: 90%;
+  height: 50%;
+  border: 1px #3BCD17;
+  box-shadow: 2px 2px 10px #3BCD17;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3em;
+  color: #48AC24;
+
+   background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px #171717 inset;
+
+
+}
+
+div.analog{
+  width: 40%;
+  display: flex;
+  max-height: 14em;
+min-height: 14em;
+}
+
+.analogclock {
+    width: 61%;
+    height: 65%;
+    border: 5px solid white;
+    background-color: #FFFFFF;
+    margin: 8px auto;
+    border-radius: 100%;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 39%;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 26px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: 0.3s all;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+div.inputdiv{
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div.input{
+  width: 100%;
+}
+
+input[type=text] {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 4px 0;
+  box-sizing: border-box;
+}
+
+div.list{
+  width: 80%;
+  box-shadow: 0px 0px 4px #000000 inset;
+}
+
+ul#task-list{
+  font-family: 'Palanquin Dark', sans-serif;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+

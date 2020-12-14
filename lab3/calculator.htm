@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    div.container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      height: 2em;
+      width: 5.5em;
+      padding: 7px;
+    }
+
+    input[type="button"] {
+      width: 100%;
+      height: 100%;
+    }
+
+    input[type="text"] {
+      width: 97%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <table border="1px ">
+        <tr>
+          <td><input type="button" value="C" onClick="clr()" /></td>
+          <td colspan="3"><input type="text" name="screen" id="screen"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="+" onClick="getEx('+')" /></td>
+          <td><input type="button" value="1" onClick="getEx('1')" /></td>
+          <td><input type="button" value="2" onClick="getEx('2')" /></td>
+          <td><input type="button" value="3" onClick="getEx('3')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="-" onClick="getEx('-')" /></td>
+          <td><input type="button" value="4" onClick="getEx('4')" /></td>
+          <td><input type="button" value="5" onClick="getEx('5')" /></td>
+          <td><input type="button" value="6" onClick="getEx('6')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="*" onClick="getEx('*')" /></td>
+          <td><input type="button" value="7" onClick="getEx('7')" /></td>
+          <td><input type="button" value="8" onClick="getEx('8')" /></td>
+          <td><input type="button" value="9" onClick="getEx('8')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="/" onClick="getEx('/')" /></td>
+          <td><input type="button" value="." onClick="getEx('.')" /></td>
+          <td><input type="button" value="0" onClick="getEx('0')" /></td>
+          <td><input type="button" value="=" onClick="solve()" /></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function getEx(val) {
+      document.getElementById("screen").value += val;
+    }
+
+    function clr() {
+      document.getElementById("screen").value = "";
+    }
+
+    function solve() {
+      let sol = eval(document.getElementById("screen").value);
+      document.getElementById("screen").value = sol;
+    }
+
+  </script>
+</body>
+
+</html>
