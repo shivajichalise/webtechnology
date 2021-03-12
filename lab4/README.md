@@ -11,10 +11,10 @@ Write a program to print palindrome/reverse of a string.
 ## Question 3
 Implement simple maths calculation using DOM
 
-| Num1    | <input type="text" id="num1"/>                                                                                                                                                              |
-| Num2    | <input type="text" id="num2"/>                                                                                                                                                  |
-| Result  | <input type="text" id="result"/>                                                                                                                                                  |
-| Actions | [![add](https://img.shields.io/badge/-Add-blue)][(https://img.shields.io/badge/-Subtract-blue)][(https://img.shields.io/badge/-Divide-blue)][(https://img.shields.io/badge/-Multiply-blue)] |
+| Num1    | ______________________________
+| Num2    | ______________________________                                                                                                                                                  |
+| Result  | ______________________________                                                                                                                                                  |
+| Actions | [![add](https://img.shields.io/badge/-Add-blue)][![Subtract](https://img.shields.io/badge/-Subtract-blue)][![Divide](https://img.shields.io/badge/-Divide-blue)][![Multiple](https://img.shields.io/badge/-Multiply-blue)] |
 
 ## Question 4
 Write a program to print reverse of each word in a sentence.
