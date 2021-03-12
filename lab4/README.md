@@ -11,16 +11,12 @@ Write a program to print palindrome/reverse of a string.
 ## Question 3
 Implement simple maths calculation using DOM
 
-| Num1    | _______
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Num2    | _______                                                                                                                                                  |
-| Result  | _______                                                                                                                                                  |
-| Actions | [![add](https://img.shields.io/badge/-Add-blue)][![Subtract](https://img.shields.io/badge/-Subtract-blue)][![Divide](https://img.shields.io/badge/-Divide-blue)][![Multiple](https://img.shields.io/badge/-Multiply-blue)] |
+| Num1    | ________________
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Num2    | ________________                                                                                                                                                              |
+| Result  | ________________                                                                                                                                                              |
+| Actions | [https://img.shields.io/badge/-Add-blue][https://img.shields.io/badge/-Subtract-blue][https://img.shields.io/badge/-Divide-blue][https://img.shields.io/badge/-Multiply-blue] |
 
-| Firstname     | Lastname      | Age   |
-| ------------- | ------------- | ----- |
-| Shankhar      | Nepali        | 50    |
-| Rajkumar      | Paudel        | 94    |
 
 ## Question 4
 Write a program to print reverse of each word in a sentence.
