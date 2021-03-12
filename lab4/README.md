@@ -1,6 +1,6 @@
 # Lab 4
 
-##Question 1
+## Question 1
 Write a program that logs whether the given number is even or odd.
 > When a number is divided by 2 and the remainder is 0 then it's an even number. Key to the answer of this question is mod operator '%'.
 
