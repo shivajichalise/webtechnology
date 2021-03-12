@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab4 WT</title>
+
+  <style>
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 0px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    td {
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 align="center">Simple Math calculation by DOM</h3>
+  <table align="center">
+    <tr>
+      <td>Num1: </td>
+      <td colspan="4"><input type="text" id="num1"></td>
+    </tr>
+    <tr>
+      <td>Num2: </td>
+      <td colspan="4"><input type="text" id="num2"></td>
+    </tr>
+    <tr>
+      <td>Result: </td>
+      <td colspan="4"><input type="text" id="result" readonly></td>
+    </tr>
+    <tr>
+      <td>Actions: </td>
+      <td><button onclick="add()"> Add </button></td>
+      <td><button onclick="subt()"> Subract </button></td>
+      <td><button onclick="div()"> Divide </button></td>
+      <td><button onclick="mul()"> Multiply </button></td>
+    </tr>
+  </table>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
