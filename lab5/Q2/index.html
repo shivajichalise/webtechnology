@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #img1 {
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    #img2 {
+      position: relative;
+      top: 26px;
+      left: -100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Image Stacking</h2>
+  <img src="../images/jslogo.png" id="img1">
+  <img src="../images/phplogo.png" id="img2">
+
+  <script>
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+
+    img1.addEventListener('click', function (ev) {
+      img1.style.zIndex = 1;
+      img2.style.zIndex = 0;
+    });
+    img2.addEventListener('click', function (ev) {
+      img2.style.zIndex = 1;
+      img1.style.zIndex = 0;
+    });
+
+  </script>
+</body>
+
+</html>

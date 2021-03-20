@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      position: relative;
+      top: 100px;
+    }
+
+    #img1 {
+      left: 50px;
+    }
+
+    #img2 {
+      left: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="../images/jslogo.png" onmousedown="grab(event)" id="img1">
+  <img src="../images/phplogo.png" onmousedown="grab(event)" id="img2">
+
+  <script>
+    // get element from mouse position
+    /* var x, y;
+     document.onmousedown = function (e) {
+       e = e || window.event;
+       x = e.clientX;
+       y = e.clientY;
+       var elm = document.elementFromPoint(x, y);
+       //console.log(elm_id);
+       grab(elm);
+     };
+    */
+
+    var elm;
+    function grab(evt) {
+      console.log(evt);
+      elm = evt.currentTarget;
+      console.log(elm);
+
+      document.addEventListener("mousemove", move, true);
+      document.addEventListener("mouseup", drop, true);
+    }
+
+    function move(ev) {
+      elm.style.left = ev.clientX + "px";
+      elm.style.top = ev.clientY + "px";
+    }
+
+    function drop(ev) {
+      document.removeEventListener('mouseup', drop, true);
+      document.removeEventListener('mousemove', move, true);
+    }
+  </script>
+</body>
+
+</html>

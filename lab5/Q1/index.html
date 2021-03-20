@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Toogle Hide/Show</h2> <button id="btn" onclick="toogle()">Hide</button>
+  <img src="../images/jslogo.png" id="img">
+
+  <script>
+    function toogle() {
+      var img = document.getElementById('img');
+      var btn = document.getElementById('btn');
+
+      if (btn.innerText == "Hide") {
+        img.style.display = "none";
+        btn.innerText = "Show";
+      } else {
+        img.style.display = "block";
+        btn.innerText = "Hide";
+      }
+    }
+  </script>
+</body>
+
+</html>

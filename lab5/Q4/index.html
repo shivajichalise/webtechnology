@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    table.tablecolorred td {
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    table.tablecolorblue td {
+      color: blue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 align="center">Dynamic Content with Js</h3>
+  <table align="center">
+    <tr>
+      <td>Name: </td>
+      <td id="nameTd"><input type="text" id="name" /></td>
+      <td> <button id="nameAdd" onclick="ok('name')">Add</button></td>
+    </tr>
+    <tr>
+      <td>Age: </td>
+      <td id="ageTd"> <input type="number" id="age"></td>
+      <td> <button id="ageAdd" onclick="ok('age')">Add</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Hobbies:</td>
+      <td id="hobbyTd">
+        <input class="hobbies" type="checkbox" name="" id="" value="Books"><label for="hobby">Books</label>
+        <input class="hobbies" type="checkbox" name="" id="" value="Movies"><label for="hobby">Movies</label>
+      </td>
+      <td>
+        <button id="addHobby" onclick="addHobby()">Add</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" align="right">
+        <button onclick="print()">Print</button>
+      </td>
+    </tr>
+  </table>
+
+  <table id="valuesOnly" align="center" style="display: none;">
+    <tr>
+      <td>Name: </td>
+      <td id="nameValTd"></td>
+    </tr>
+    <tr>
+      <td>Age: </td>
+      <td id="ageValTd"></td>
+    </tr>
+    <tr>
+      <td>Hobbies:</td>
+      <td id="hobbyValTd"></td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="change('blue')">Blue</button>
+      </td>
+      <td>
+        <button onclick="change('red')">Make Red</button>
+      </td>
+    </tr>
+
+  </table>
+  <script>
+    function addHobby() {
+      var hobby = prompt("Enter your hobby: ");
+      document.getElementById('hobbyTd').innerHTML += '<input type="checkbox" class="hobbies" name="" id="" value="' + hobby + '" checked><label for="hobby">' + hobby + '</label>';
+    }
+
+    function ok(par) {
+      if (par === "name") {
+        var naam = document.getElementById('name');
+        var name = naam.innerText;
+        naam.setAttribute("value", name);
+        naam.setAttribute("readonly", "");
+
+        var butun = document.getElementById('nameAdd');
+        butun.innerHTML = "Done";
+        butun.setAttribute("disabled", "");
+      } else {
+        var age = document.getElementById('age');
+        var ageVal = age.innerText;
+        age.setAttribute("value", ageVal);
+        age.setAttribute("readonly", "");
+
+        var butun = document.getElementById('ageAdd');
+        butun.innerHTML = "Done";
+        butun.setAttribute("disabled", "");
+      }
+    }
+
+    function print() {
+
+      document.getElementById('valuesOnly').style.display = "block";
+      var checkedValues = [];
+      var inputElements = document.getElementsByClassName('hobbies');
+      for (var i = 0; i < inputElements.length; i++) {
+        if (inputElements[i].checked) {
+          checkedValues[i] = inputElements[i].value;
+        }
+      }
+      console.log(checkedValues);
+
+      var naam = document.getElementById('name').value;
+      var age = document.getElementById('age').value;
+
+      document.getElementById('nameValTd').innerText = naam;
+      document.getElementById('ageValTd').innerText = age;
+      for (var i = 0; i < checkedValues.length; i++) {
+        if (checkedValues[i] == undefined) {
+          continue;
+        } else {
+          document.getElementById('hobbyValTd').innerText += checkedValues[i] + ',';
+        }
+      }
+    }
+
+    function change(par) {
+      if (par == "blue") {
+
+        document.getElementById('valuesOnly').setAttribute("class", "tablecolorblue");
+      } else {
+
+        document.getElementById('valuesOnly').setAttribute("class", "tablecolorred");
+      }
+    }
+  </script>
+</body>
+
+</html>
