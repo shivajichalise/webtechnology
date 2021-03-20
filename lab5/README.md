@@ -39,6 +39,13 @@ Static positioned elements are not affected by the top, bottom, left, and right 
 An element with position: relative; is positioned relative to its normal position.
 Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
 
+For stacking images we have CSS z-Index property.
+The z-index property specifies the stack order of an element.
+An element with greater stack order is always in front of an element with a lower stack order.
+```
+z-index: 0 or 1;
+```
+
 # Question 3: Program to illustrate drag and drop element using Js
 
 For implementing drag and drop using js we will have to use events (mousedown and mouseup in this case).
