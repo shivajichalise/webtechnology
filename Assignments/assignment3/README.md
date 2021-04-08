@@ -1,4 +1,6 @@
-# Pattern Matching in PHP
+# Pattern Matching & File Handling in PHP
+
+## Pattern Matching
 Hypertext Preprocessor (PHP) using regular expression for pattern matching.
 A regular expression is a sequence of characters that forms a search pattern. When you search for data in a text, you can use this search pattern to describe what you are searching for.
 Regular expression is of two types:
@@ -73,4 +75,16 @@ print_r($strnew); // Outputs --> Array ( [0] => apple [1] => banana [2] => cucum
 ?>
 ```
 
-# File Handling
+## File Handling
+PHP has several functions for creating, reading, uploading, and editing files.
+
+Functions  | Description
+---------- | -----------
+readfile() | The readfile() function reads a file and writes it to the output buffer.
+fopen()    | A better method to open files is with the fopen() function. This function gives you more options than the readfile() function. Can also be used to create files.
+fread()    | The fread() function reads from an open file. The first parameter of fread() contains the name of the file to read from and the second parameter specifies the maximum number of bytes to read.
+fclose()   | The fclose() function is used to close an open file.
+fgets()    | Reads a single line from a file.
+feof()     | The feof() function checks if the "end-of-file" (EOF) has been reached. It is useful for looping through data of unknown length.
+fwrite()   | fwrite() function is used to write to a file. The first parameter of fwrite() contains the name of the file to write to and the second parameter is the string to be written.
+
